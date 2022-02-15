@@ -10,23 +10,13 @@
     <!-- Get Header and Footer -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script>$(document).ready(function () { $("bheader").load("assets/brandingHeader.html"); });</script>
+    <script>$(document).ready(function () { $("homeHelpModal").load("assets/homeHelpModal.html"); });</script>
     <script>$(document).ready(function () { $("bfooter").load("assets/brandingFooter.html"); });</script>
 
     <style>
-        /* help modal button */
-        .active {
-            margin: 6px 0px;
-            padding: 4px 16px;
-        }
-
         /* primary nav route header */
         .current-page {
             padding: 14px 0px 8px 0px !important;
-        }
-
-        /* help modal header */
-        .help-number {
-            font-size: smaller;
         }
 
         .card-button {
@@ -34,6 +24,14 @@
             font-weight: bold !important;
             letter-spacing: 0.6px !important;
             font-size: 20px !important;
+        }
+
+        .nearest-catch {
+            font-size: larger;
+            text-align: center;
+            font-weight: bold;
+            font-style: oblique;
+            background: #ffc10724;
         }
     </style>
 </head>
@@ -48,53 +46,7 @@
                     <a href="#" class="nav-link link-dark current-page">Home</a>
                 </li>
             </ul>
-
-            <!-- Home Help Page 1 -->
-            <div class="modal fade" id="homeHelpToggle" aria-hidden="true" aria-labelledby="Help" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalToggleLabel"><span
-                                    class="help-number text-muted">#1:</span> 10 Nearest Masjids</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            Show a second modal and hide this one with the button below.
-                        </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
-                                data-bs-dismiss="modal">Open second modal</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Home Help Page 2 -->
-            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
-                aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            Hide this modal and show the first with the button below.
-                        </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
-                                data-bs-dismiss="modal">Back to first</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Home Help Button -->
-            <ul class="nav nav-pills">
-                <li class="nav-item"><a href="#homeHelpToggle" class="nav-link bg-info active" data-bs-toggle="modal"
-                        aria-current="page">Help</a></li>
-            </ul>
-
+            <homeHelpModal></homeHelpModal>
         </div>
     </nav>
 
@@ -106,13 +58,46 @@
         <div class="row row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4 justify-content-center">
 
             <!-- Get 10 Nearest Masjids -->
-            <div class="col">
+            <div class="col" id="10nearest">
                 <div class="card">
-                    <img src="assets/mjSearch.png" class="" alt="10 Nearest Masjid Search">
+                    <img src="assets/mjSearch.png" class="" alt="10 Nearest Masjid Search"
+                        onclick="javascript:window.location='nearestMasjid.html';" />
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <!-- Card Title -->
+                        <h1 class="card-title"><span class="text-muted" style="font-size: smaller;">#1: </span>10
+                            Nearest Masjids</h1>
+                        <hr>
+                        <!-- Card Desc -->
+                        <p>Search 10 Masjids nearest to you at this very moment.</p>
+                        <p style="margin-bottom: 0.5rem; ">Easier way to say:
+                            <br>
+                        <div class="nearest-catch">"10 Masjids Near Me with Salah Timings and Navigation!!"</div>
+                        </p>
+                        <!-- Card Button -->
+                        <a href="#" class="btn card-button"
+                            style="background-color: #f48953; color: white; box-shadow: 0px 0px 8px 4px #f4ac63;">Search
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Get 10 Nearest Masjids -->
+             <div class="col" id="10nearest">
+                <div class="card">
+                    <img src="assets/mjSearch.png" class="" alt="10 Nearest Masjid Search"
+                        onclick="javascript:window.location='nearestMasjid.html';" />
+                    <div class="card-body">
+                        <!-- Card Title -->
+                        <h1 class="card-title"><span class="text-muted" style="font-size: smaller;">#2: </span>10
+                            Nearest Masjids</h1>
+                        <hr>
+                        <!-- Card Desc -->
+                        <p>Search 10 Masjids nearest to you at this very moment.</p>
+                        <p style="margin-bottom: 0.5rem; ">Easier way to say:
+                            <br>
+                        <div class="nearest-catch">"10 Masjids Near Me with Salah Timings and Navigation!!"</div>
+                        </p>
+                        <!-- Card Button -->
                         <a href="#" class="btn card-button"
                             style="background-color: #f48953; color: white; box-shadow: 0px 0px 8px 4px #f4ac63;">Search
                             Now</a>
@@ -121,13 +106,22 @@
             </div>
 
             <!-- Get 10 Nearest Masjids -->
-            <div class="col">
+            <div class="col" id="10nearest">
                 <div class="card">
-                    <img src="assets/mjSearch.png" class="" alt="10 Nearest Masjid Search">
+                    <img src="assets/mjSearch.png" class="" alt="10 Nearest Masjid Search"
+                        onclick="javascript:window.location='nearestMasjid.html';" />
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <!-- Card Title -->
+                        <h1 class="card-title"><span class="text-muted" style="font-size: smaller;">#3: </span>10
+                            Nearest Masjids</h1>
+                        <hr>
+                        <!-- Card Desc -->
+                        <p>Search 10 Masjids nearest to you at this very moment.</p>
+                        <p style="margin-bottom: 0.5rem; ">Easier way to say:
+                            <br>
+                        <div class="nearest-catch">"10 Masjids Near Me with Salah Timings and Navigation!!"</div>
+                        </p>
+                        <!-- Card Button -->
                         <a href="#" class="btn card-button"
                             style="background-color: #f48953; color: white; box-shadow: 0px 0px 8px 4px #f4ac63;">Search
                             Now</a>
@@ -135,14 +129,23 @@
                 </div>
             </div>
 
-            <!-- Get 10 Nearest Masjids -->
-            <div class="col">
+             <!-- Get 10 Nearest Masjids -->
+             <div class="col" id="10nearest">
                 <div class="card">
-                    <img src="assets/mjSearch.png" class="" alt="10 Nearest Masjid Search">
+                    <img src="assets/mjSearch.png" class="" alt="10 Nearest Masjid Search"
+                        onclick="javascript:window.location='nearestMasjid.html';" />
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <!-- Card Title -->
+                        <h1 class="card-title"><span class="text-muted" style="font-size: smaller;">#4: </span>10
+                            Nearest Masjids</h1>
+                        <hr>
+                        <!-- Card Desc -->
+                        <p>Search 10 Masjids nearest to you at this very moment.</p>
+                        <p style="margin-bottom: 0.5rem; ">Easier way to say:
+                            <br>
+                        <div class="nearest-catch">"10 Masjids Near Me with Salah Timings and Navigation!!"</div>
+                        </p>
+                        <!-- Card Button -->
                         <a href="#" class="btn card-button"
                             style="background-color: #f48953; color: white; box-shadow: 0px 0px 8px 4px #f4ac63;">Search
                             Now</a>
