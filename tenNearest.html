@@ -10,7 +10,6 @@
     <!-- Get Header and Footer -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script>$(document).ready(function () { $("bheader").load("assets/brandingHeader.html"); });</script>
-    <script>$(document).ready(function () { $("homeHelpModal").load("assets/homeHelpModal.html"); });</script>
     <script>$(document).ready(function () { $("bfooter").load("assets/brandingFooter.html"); });</script>
 
     <link rel="stylesheet" href="css/masjidHome.css">
@@ -18,6 +17,11 @@
         /* primary nav route header */
         .current-page {
             padding: 14px 0px 8px 0px !important;
+        }
+        
+        .active {
+            margin: 6px 0px;
+            padding: 4px 16px;
         }
     </style>
 </head>
@@ -32,7 +36,9 @@
                     <a href="#" class="nav-link link-dark current-page">Home</a>
                 </li>
             </ul>
-            <homeHelpModal></homeHelpModal>
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="masjidHome.html" class="nav-link bg-info active" aria-current="page">Home</a></li>
+            </ul>
         </div>
     </nav>
 
@@ -42,6 +48,7 @@
     <!-- Body Code  -->
     <div class="container-fluid">
     </div>
+
     <!-- Branding Footer-->
     <bfooter></bfooter>
 
