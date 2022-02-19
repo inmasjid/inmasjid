@@ -9,34 +9,69 @@
 }
 
 #tenNearest{
-    background: beige;
+    background: #f1c981a8;
 }
 
 #explore{
-    background: orange;
+    background: #68cadf;
 }
 
 #add{
     background: blue;
 }
 
-.serviceInfo {
+/* #cardX{
+    background: blue;
+} */
+
+.serviceInfo{
     font-size: larger;
     text-align: center;
     font-weight: bold;
     font-style: oblique;
+}
+
+#tenNearestServiceInfo {
     background: #ffc10724;
 }
+
+#exploreServiceInfo {
+    background: #68cadf40;
+}
+
+#addServiceInfo {
+    background: #ffc10724;
+}
+
+/* #cardXServiceInfo {
+    background: #68cadf40;
+} */
+
 
 .card-button {
     width: 100%;
     font-weight: bold !important;
     letter-spacing: 0.6px !important;
     font-size: 20px !important;
+    color: white !important;
 }
 
 #tenNearestCardButton{
     background-color: #f48953; 
-    color: white; 
-    box-shadow: 0px 0px 8px 4px #f4ac63;
+    box-shadow: 0px 0px 8px 4px #f48953a8;
 }
+
+#exploreCardButton{
+    background-color: #80cf96; 
+    box-shadow: 0px 0px 8px 4px #80cf96a8;
+}
+
+#addCardButton{
+    background-color: #f48953; 
+    box-shadow: 0px 0px 8px 4px #f48953a8;
+}
+
+/* #cardXCardButton{
+    background-color: #96cf96; 
+    box-shadow: 0px 0px 8px 4px #96cf96a8;
+} */
