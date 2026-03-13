@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masjid Home</title>
+
+    <!-- Get Header and Footer -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>$(document).ready(function () { $("bheader").load("assets/brandingHeader.html"); });</script>
+    <script>$(document).ready(function () { $("homeHelpModal").load("assets/homeHelpModal.html"); });</script>
+    <script>$(document).ready(function () { $("bfooter").load("assets/brandingFooter.html"); });</script>
+
+    <link rel="stylesheet" href="css/masjidHome.css">
+    <style>
+        /* primary nav route header */
+        .current-page {
+            padding: 14px 0px 8px 0px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Primary Nav Bar -->
+    <nav class="bg-light">
+        <div class="container d-flex flex-wrap">
+            <ul class="nav me-auto">
+                <li class="nav-item">
+                    <!-- Route -->
+                    <a href="#" class="nav-link link-dark current-page">Home</a>
+                </li>
+            </ul>
+            <homeHelpModal></homeHelpModal>
+        </div>
+    </nav>
+
+    <!-- Branding Header -->
+    <bheader></bheader>
+
+    <!-- Body Code  -->
+    <div class="container">
+        <div class="row row-cols-md-2 row-cols-lg-3 row-cols-xl-3">
+
+            <!-- Get 10 Nearest Masjids -->
+            <div class="col" id="tenNearest">
+                <div class="card cardStyle">
+                    <img src="assets/mjSearch.png" class="" alt="10 Nearest Masjid Search"
+                        onclick="javascript:window.location='tenNearest.html';" />
+                    <div class="card-body">
+                        <!-- Card Title -->
+                        <h1 class="card-title"><span class="text-muted" style="font-size: smaller;">#1: </span>10
+                            Nearest Masjids</h1>
+                        <hr>
+                        <!-- Card Desc -->
+                        <p>Search 10 Masjids nearest to you at this very moment.</p>
+                        <p style="margin-bottom: 0.5rem; ">Easier way to say:
+                            <br>
+                        <div class="serviceInfo" id="tenNearestServiceInfo">"10 Masjids Near Me with Salah Timings and
+                            Navigation!!"</div>
+                        </p>
+                        <!-- Card Button -->
+                        <a href="tenNearest.html" class="btn card-button" id="tenNearestCardButton">Search
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Explore Masjids -->
+            <div class="col" id="explore">
+                <div class="card cardStyle">
+                    <img src="assets/mjExplore.png" class="" alt="Explore Masjids"
+                        onclick="javascript:window.location='explore.html';" />
+                    <div class="card-body">
+                        <!-- Card Title -->
+                        <h1 class="card-title"><span class="text-muted" style="font-size: smaller;">#2: </span>Explore
+                            Masjids</h1>
+                        <hr>
+                        <!-- Card Desc -->
+                        <p>Search 10 Masjids nearest to you at this very moment.</p>
+                        <p style="margin-bottom: 0.5rem; ">Easier way to say:
+                            <br>
+                        <div class="serviceInfo" id="exploreServiceInfo">"10 Masjids Near Me with Salah Timings and
+                            Navigation!!"</div>
+                        </p>
+                        <!-- Card Button -->
+                        <a href="explore.html" class="btn card-button" id="exploreCardButton">Explore
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Get 10 Nearest Masjids -->
+            <div class="col" id="tenNearest">
+                <div class="card cardStyle">
+                    <img src="assets/mjSearch.png" class="" alt="10 Nearest Masjid Search"
+                        onclick="javascript:window.location='tenNearest.html';" />
+                    <div class="card-body">
+                        <!-- Card Title -->
+                        <h1 class="card-title"><span class="text-muted" style="font-size: smaller;">#1: </span>10
+                            Nearest Masjids</h1>
+                        <hr>
+                        <!-- Card Desc -->
+                        <p>Search 10 Masjids nearest to you at this very moment.</p>
+                        <p style="margin-bottom: 0.5rem; ">Easier way to say:
+                            <br>
+                        <div class="serviceInfo" id="tenNearestServiceInfo">"10 Masjids Near Me with Salah Timings and
+                            Navigation!!"</div>
+                        </p>
+                        <!-- Card Button -->
+                        <a href="tenNearest.html" class="btn card-button" id="tenNearestCardButton">Search
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Explore Masjids -->
+            <div class="col" id="explore">
+                <div class="card cardStyle">
+                    <img src="assets/mjExplore.png" class="" alt="Explore Masjids"
+                        onclick="javascript:window.location='explore.html';" />
+                    <div class="card-body">
+                        <!-- Card Title -->
+                        <h1 class="card-title"><span class="text-muted" style="font-size: smaller;">#2: </span>Explore
+                            Masjids</h1>
+                        <hr>
+                        <!-- Card Desc -->
+                        <p>Search 10 Masjids nearest to you at this very moment.</p>
+                        <p style="margin-bottom: 0.5rem; ">Easier way to say:
+                            <br>
+                        <div class="serviceInfo" id="exploreServiceInfo">"10 Masjids Near Me with Salah Timings and
+                            Navigation!!"</div>
+                        </p>
+                        <!-- Card Button -->
+                        <a href="explore.html" class="btn card-button" id="exploreCardButton">Explore
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Branding Footer-->
+    <bfooter></bfooter>
+
+    <!-- JScripts -->
+</body>
+
+</html>

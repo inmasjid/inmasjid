@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masjid Home</title>
+
+    <!-- Get Header and Footer -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>$(document).ready(function () { $("bheader").load("assets/brandingHeader.html"); });</script>
+    <script>$(document).ready(function () { $("bfooter").load("assets/brandingFooter.html"); });</script>
+
+    <link rel="stylesheet" href="css/masjidHome.css">
+    <style>
+        /* primary nav route header */
+        .current-page {
+            padding: 14px 0px 8px 0px !important;
+        }
+        
+        .active {
+            margin: 6px 0px;
+            padding: 4px 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Primary Nav Bar -->
+    <nav class="bg-light">
+        <div class="container d-flex flex-wrap">
+            <ul class="nav me-auto">
+                <li class="nav-item">
+                    <!-- Route -->
+                    <a href="#" class="nav-link link-dark current-page">Home</a>
+                </li>
+            </ul>
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="masjidHome.html" class="nav-link bg-info active" aria-current="page">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Branding Header -->
+    <bheader></bheader>
+
+    <!-- Body Code  -->
+    <div class="container-fluid">
+    </div>
+
+    <!-- Branding Footer-->
+    <bfooter></bfooter>
+
+    <!-- JScripts -->
+</body>
+
+</html>
