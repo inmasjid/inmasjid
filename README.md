@@ -1,5 +1,14 @@
 # InMasjid
 
+_Eid ul Fitr Mubarak 01/10/1447 (21/03/2026)_
+_Alhamdulillah!! By the Fazl of ALLAH SWT_
+_we will be are putting sincere efforts starting today from EID_
+_to In Sha Allah, successfully complete the pilot phase by_
+_01/11 Dhul Hijjah and roll out the version to Masajid and Team_
+_In Sha Allah, the official public launch 1 Dhul Hijjah with Eid ul Adha Schedule_ 
+_we ask ALLAH SWT alone to help this project to succeed for HIS pleasure, Aameen_
+_wa salaatu was salaamu ala Rasoolullah SAW_
+
 **Connecting Musallees with Masajid - Fee Sabeelillah**
 
 [![Website](https://img.shields.io/badge/Visit-inmasjid.com-blue?style=flat-square)](https://inmasjid.com)  
